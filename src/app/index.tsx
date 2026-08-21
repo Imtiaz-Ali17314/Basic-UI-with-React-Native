@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import Header from "../../components/Header";
 import Colors from "../../constants/Colors";
 import { TASKS } from "../../constants/tasks";
 
@@ -18,6 +19,7 @@ export default function Index() {
         ListHeaderComponent={
           <>
             {/* Header */}
+            <Header />
             {/* DateLabel */}
             {/* Filters */}
           </>
