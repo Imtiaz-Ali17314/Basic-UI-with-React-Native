@@ -1,56 +1,130 @@
-# Welcome to your Expo app 👋
+# 📱 Basic UI with React Native — Task Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![React Native](https://img.shields.io/badge/React_Native-0.86.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo_SDK-57-000000?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## Get started
+A sleek, modern, dark-themed **Task Management Mobile Application UI** built with **React Native**, **Expo SDK 57**, and **Expo Router**. Designed with pixel-perfect precision, smooth navigation, category-based task organization, and dynamic status filtering.
 
-1. Install dependencies
+---
+
+## 📸 App Preview
+
+<div align="center">
+  <img src="assets/images/Basic-UI-with-React-Native.PNG" alt="App Preview" width="360" style="border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+</div>
+
+---
+
+## ✨ Features
+
+- 📅 **Interactive Date Selector**: Horizontal scrollable date strip for quick day-by-day task navigation.
+- 🎯 **Status Filter Tabs**: Seamlessly filter tasks between **All**, **Done**, **In-Progress**, and **To-do** states.
+- 🏷️ **Categorized Task Cards**: Displays task title, category, scheduled time, icon badge, and visual status indicator.
+- 🔍 **Dynamic Task Detail Screen**: Deep dive into individual task research & details with interactive resources and key points.
+- 🎨 **Modern Dark UI**: Beautifully styled using high-contrast dark theme colors and custom icons (`@expo/vector-icons`).
+- ⚡ **Optimized Performance**: Built with `FlatList` virtualized rendering and memoized data filtering for 60 FPS performance.
+- 🛡️ **Strict TypeScript**: Fully type-safe components, navigation params, and task data models.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React Native](https://reactnative.dev/) (v0.86)
+- **Platform**: [Expo SDK 57](https://expo.dev/)
+- **Routing**: [Expo Router v57](https://docs.expo.dev/router/introduction/) (File-based navigation)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: `StyleSheet` API & Custom Design Tokens
+- **Icons**: `@expo/vector-icons` (Ionicons)
+- **Animations**: `react-native-reanimated`
+
+---
+
+## 📁 Directory Structure
+
+```text
+Basic-UI-with-React-Native/
+├── assets/
+│   └── images/
+│       └── Basic-UI-with-React-Native.PNG  # App Screenshot / Preview
+├── components/                             # Reusable UI Components
+│   ├── DateSelector.tsx                    # Horizontal Date Strip Navigation
+│   ├── FIlterTabs.tsx                      # Task Status Filter Tabs
+│   ├── Header.tsx                          # App Header with Action Icons
+│   └── TaskCard.tsx                        # Task Item Component
+├── constants/                              # Data Models & Styles
+│   ├── Colors.ts                           # Theme Color Palette
+│   └── tasks.ts                            # Task Types & Initial Mock Data
+├── src/
+│   └── app/                                # Expo Router Pages & Navigation
+│       ├── _layout.tsx                     # Root Stack Layout
+│       ├── index.tsx                       # Today's Tasks Screen (Main Dashboard)
+│       └── research/
+│           └── [id].tsx                    # Dynamic Task Detail View
+├── app.json                                # Expo Configuration
+├── tsconfig.json                           # TypeScript Configuration
+└── package.json                            # Project Dependencies & Scripts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Expo Go](https://expo.dev/go) app on your iOS / Android device or an Emulator / Simulator.
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/Imtiaz-Ali17314/Basic-UI-with-React-Native.git
+   cd Basic-UI-with-React-Native
+   ```
+
+2. **Install dependencies**:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Start the development server**:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Run on target platform**:
+   - Press `a` for **Android** emulator/device.
+   - Press `i` for **iOS** simulator.
+   - Press `w` for **Web**.
+   - Scan the QR code with **Expo Go** (Android) or **Camera App** (iOS).
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📜 Available Scripts
 
-## Get a fresh project
+| Script      | Command           | Description                 |
+| ----------- | ----------------- | --------------------------- |
+| **Start**   | `npm start`       | Launches Expo Metro Bundler |
+| **Android** | `npm run android` | Starts app on Android       |
+| **iOS**     | `npm run ios`     | Starts app on iOS           |
+| **Web**     | `npm run web`     | Starts app in web browser   |
+| **Lint**    | `npm run lint`    | Runs Expo linter            |
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🔗 Repository Information
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **GitHub Repository**: [Imtiaz-Ali17314/Basic-UI-with-React-Native](https://github.com/Imtiaz-Ali17314/Basic-UI-with-React-Native.git)
+- **Author**: Imtiaz Ali
 
-### Other setup steps
+---
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+## 📄 License
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
