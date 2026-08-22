@@ -48,3 +48,7 @@ export const TASKS: Task[] = [
     icon: { name: "arrow-down-circle", backgroundColor: "#4ADE80" },
   },
 ];
+
+export const FILTERS = ["All", "Done", "In-Progress", "To-do"] as const;
+
+export type FilterOptions = (typeof FILTERS)[number];
