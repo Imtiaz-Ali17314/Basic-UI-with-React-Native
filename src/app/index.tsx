@@ -1,10 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import DateSelector from "../../components/DateSelector";
 import FIlterTabs from "../../components/FIlterTabs";
 import Header from "../../components/Header";
+import TaskCard from "../../components/TaskCard";
 import Colors from "../../constants/Colors";
 import { FilterOptions, TASKS } from "../../constants/tasks";
 
@@ -17,9 +18,7 @@ export default function Index() {
       <FlatList
         data={TASKS}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <Text style={{ fontSize: 18 }}>{item.title}</Text>
-        )}
+        renderItem={({ item }) => <TaskCard tasks={item} />}
         ListHeaderComponent={
           <>
             {/* Header */}

@@ -45,7 +45,7 @@ export const TASKS: Task[] = [
     title: "Task 4",
     time: "1:00 PM",
     status: "To-do",
-    icon: { name: "arrow-down-circle", backgroundColor: "#4ADE80" },
+    icon: { name: "bookmark", backgroundColor: "#4ADE80" },
   },
 ];
 
