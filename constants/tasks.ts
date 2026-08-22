@@ -15,9 +15,43 @@ export type Task = {
 };
 
 export const TASKS: Task[] = [
-  // === WORK TASKS ===
+  // === COURSE TASKS ===
   {
     id: "1",
+    category: "Grocery shopping app design",
+    title: "Market Research",
+    time: "10:00 AM",
+    status: "Done",
+    icon: { name: "grid", backgroundColor: "#FF6B8A" },
+  },
+  {
+    id: "2",
+    category: "Grocery shopping app design",
+    title: "Competitive Analysis",
+    time: "12:00 PM",
+    status: "In-Progress",
+    icon: { name: "grid", backgroundColor: "#FF6B8A" },
+  },
+  {
+    id: "3",
+    category: "Uber Eats redesign challenge",
+    title: "Create Low-fidelity Wireframe",
+    time: "07:00 PM",
+    status: "To-do",
+    icon: { name: "arrow-down-circle", backgroundColor: "#4ADE80" },
+  },
+  {
+    id: "4",
+    category: "About design sprint",
+    title: "How to pitch a Design Sprint",
+    time: "09:00 PM",
+    status: "To-do",
+    icon: { name: "bookmark", backgroundColor: "#FBBF24" },
+  },
+
+  // === WORK TASKS ===
+  {
+    id: "5",
     category: "work",
     title: "Complete project proposal",
     time: "9:00 AM",
@@ -25,7 +59,7 @@ export const TASKS: Task[] = [
     icon: { name: "briefcase-outline", backgroundColor: "#4ADE80" },
   },
   {
-    id: "2",
+    id: "6",
     category: "work",
     title: "Team meeting with designers",
     time: "10:30 AM",
@@ -33,7 +67,7 @@ export const TASKS: Task[] = [
     icon: { name: "people-outline", backgroundColor: "#f59e0b" },
   },
   {
-    id: "3",
+    id: "7",
     category: "work",
     title: "Review pull requests",
     time: "11:45 AM",
@@ -41,7 +75,7 @@ export const TASKS: Task[] = [
     icon: { name: "git-pull-request-outline", backgroundColor: "#3B82F6" },
   },
   {
-    id: "4",
+    id: "8",
     category: "work",
     title: "Deploy app to production",
     time: "2:00 PM",
@@ -49,7 +83,7 @@ export const TASKS: Task[] = [
     icon: { name: "rocket-outline", backgroundColor: "#8B5CF6" },
   },
   {
-    id: "5",
+    id: "9",
     category: "work",
     title: "Write technical documentation",
     time: "3:30 PM",
@@ -57,7 +91,7 @@ export const TASKS: Task[] = [
     icon: { name: "document-text-outline", backgroundColor: "#EC4899" },
   },
   {
-    id: "6",
+    id: "10",
     category: "work",
     title: "Client presentation",
     time: "5:00 PM",
@@ -67,7 +101,7 @@ export const TASKS: Task[] = [
 
   // === PERSONAL TASKS ===
   {
-    id: "7",
+    id: "11",
     category: "personal",
     title: "Gym workout",
     time: "6:00 AM",
@@ -75,7 +109,7 @@ export const TASKS: Task[] = [
     icon: { name: "barbell-outline", backgroundColor: "#F97316" },
   },
   {
-    id: "8",
+    id: "12",
     category: "personal",
     title: "Meditation & Yoga",
     time: "7:15 AM",
@@ -83,7 +117,7 @@ export const TASKS: Task[] = [
     icon: { name: "leaf-outline", backgroundColor: "#A3E635" },
   },
   {
-    id: "9",
+    id: "13",
     category: "personal",
     title: "Grocery shopping",
     time: "12:30 PM",
@@ -91,7 +125,7 @@ export const TASKS: Task[] = [
     icon: { name: "cart-outline", backgroundColor: "#F472B6" },
   },
   {
-    id: "10",
+    id: "14",
     category: "personal",
     title: "Call mom",
     time: "6:30 PM",
@@ -99,7 +133,7 @@ export const TASKS: Task[] = [
     icon: { name: "call-outline", backgroundColor: "#60A5FA" },
   },
   {
-    id: "11",
+    id: "15",
     category: "personal",
     title: "Read 30 pages of book",
     time: "9:00 PM",
@@ -107,7 +141,7 @@ export const TASKS: Task[] = [
     icon: { name: "book-outline", backgroundColor: "#A78BFA" },
   },
   {
-    id: "12",
+    id: "16",
     category: "personal",
     title: "Plan weekend trip",
     time: "10:00 PM",
@@ -117,7 +151,7 @@ export const TASKS: Task[] = [
 
   // === STUDY TASKS ===
   {
-    id: "13",
+    id: "17",
     category: "study",
     title: "Complete React Native course",
     time: "8:00 AM",
@@ -125,7 +159,7 @@ export const TASKS: Task[] = [
     icon: { name: "code-outline", backgroundColor: "#06B6D4" },
   },
   {
-    id: "14",
+    id: "18",
     category: "study",
     title: "Practice TypeScript exercises",
     time: "1:00 PM",
@@ -133,7 +167,7 @@ export const TASKS: Task[] = [
     icon: { name: "terminal-outline", backgroundColor: "#6366F1" },
   },
   {
-    id: "15",
+    id: "19",
     category: "study",
     title: "Prepare for technical interview",
     time: "4:00 PM",
@@ -141,7 +175,7 @@ export const TASKS: Task[] = [
     icon: { name: "bulb-outline", backgroundColor: "#F43F5E" },
   },
   {
-    id: "16",
+    id: "20",
     category: "study",
     title: "Watch UI/UX design tutorial",
     time: "7:00 PM",
@@ -149,7 +183,7 @@ export const TASKS: Task[] = [
     icon: { name: "layers-outline", backgroundColor: "#EAB308" },
   },
   {
-    id: "17",
+    id: "21",
     category: "study",
     title: "Write blog post on Expo",
     time: "8:30 PM",
@@ -159,7 +193,7 @@ export const TASKS: Task[] = [
 
   // === HEALTH TASKS ===
   {
-    id: "18",
+    id: "22",
     category: "health",
     title: "Drink 8 glasses of water",
     time: "8:00 AM",
@@ -167,7 +201,7 @@ export const TASKS: Task[] = [
     icon: { name: "water-outline", backgroundColor: "#3B82F6" },
   },
   {
-    id: "19",
+    id: "23",
     category: "health",
     title: "Walk 10,000 steps",
     time: "5:30 PM",
@@ -175,7 +209,7 @@ export const TASKS: Task[] = [
     icon: { name: "walk-outline", backgroundColor: "#10B981" },
   },
   {
-    id: "20",
+    id: "24",
     category: "health",
     title: "Eat healthy breakfast",
     time: "7:30 AM",
@@ -183,7 +217,7 @@ export const TASKS: Task[] = [
     icon: { name: "nutrition-outline", backgroundColor: "#EF4444" },
   },
   {
-    id: "21",
+    id: "25",
     category: "health",
     title: "Sleep by 11 PM",
     time: "11:00 PM",
@@ -193,7 +227,7 @@ export const TASKS: Task[] = [
 
   // === SOCIAL TASKS ===
   {
-    id: "22",
+    id: "26",
     category: "social",
     title: "Reply to important emails",
     time: "9:30 AM",
@@ -201,7 +235,7 @@ export const TASKS: Task[] = [
     icon: { name: "mail-outline", backgroundColor: "#F97316" },
   },
   {
-    id: "23",
+    id: "27",
     category: "social",
     title: "Schedule meetup with friends",
     time: "12:00 PM",
@@ -209,7 +243,7 @@ export const TASKS: Task[] = [
     icon: { name: "calendar-outline", backgroundColor: "#EC4899" },
   },
   {
-    id: "24",
+    id: "28",
     category: "social",
     title: "Post on LinkedIn",
     time: "3:00 PM",
@@ -217,7 +251,7 @@ export const TASKS: Task[] = [
     icon: { name: "share-outline", backgroundColor: "#0A66C2" },
   },
   {
-    id: "25",
+    id: "29",
     category: "social",
     title: "Attend online webinar",
     time: "6:00 PM",
@@ -227,7 +261,7 @@ export const TASKS: Task[] = [
 
   // === FINANCE TASKS ===
   {
-    id: "26",
+    id: "30",
     category: "finance",
     title: "Pay utility bills",
     time: "10:00 AM",
@@ -235,7 +269,7 @@ export const TASKS: Task[] = [
     icon: { name: "card-outline", backgroundColor: "#059669" },
   },
   {
-    id: "27",
+    id: "31",
     category: "finance",
     title: "Check stock portfolio",
     time: "2:30 PM",
@@ -243,7 +277,7 @@ export const TASKS: Task[] = [
     icon: { name: "trending-up-outline", backgroundColor: "#7C3AED" },
   },
   {
-    id: "28",
+    id: "32",
     category: "finance",
     title: "Prepare monthly budget",
     time: "7:30 PM",
@@ -251,7 +285,7 @@ export const TASKS: Task[] = [
     icon: { name: "wallet-outline", backgroundColor: "#F59E0B" },
   },
   {
-    id: "29",
+    id: "33",
     category: "finance",
     title: "Transfer savings",
     time: "9:00 PM",
@@ -261,7 +295,7 @@ export const TASKS: Task[] = [
 
   // === HOME TASKS ===
   {
-    id: "30",
+    id: "34",
     category: "home",
     title: "Clean the house",
     time: "8:30 AM",
@@ -269,7 +303,7 @@ export const TASKS: Task[] = [
     icon: { name: "home-outline", backgroundColor: "#FCD34D" },
   },
   {
-    id: "31",
+    id: "35",
     category: "home",
     title: "Fix broken shelf",
     time: "11:00 AM",
@@ -277,7 +311,7 @@ export const TASKS: Task[] = [
     icon: { name: "construct-outline", backgroundColor: "#F87171" },
   },
   {
-    id: "32",
+    id: "36",
     category: "home",
     title: "Water the plants",
     time: "6:30 AM",
@@ -285,7 +319,7 @@ export const TASKS: Task[] = [
     icon: { name: "flower-outline", backgroundColor: "#34D399" },
   },
   {
-    id: "33",
+    id: "37",
     category: "home",
     title: "Cook dinner for family",
     time: "7:00 PM",
