@@ -1,5 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
-import { StyleSheet, Text, View } from "react-native";
+import { useRouter } from "expo-router";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Colors from "../constants/Colors";
 import { Task } from "../constants/tasks";
 
@@ -14,8 +15,27 @@ export type TaskCardProps = {
 };
 
 const TaskCard = ({ tasks }: TaskCardProps) => {
+  const router = useRouter();
+
+  const handlePress = () => {
+    const courseTaskIds = ["1", "2", "3", "4"];
+
+    if (courseTaskIds.includes(tasks.id)) {
+      router.push({
+        pathname: "/research/[id]",
+        params: { id: tasks.id },
+      });
+    } else {
+      console.log("Normal task clicked:", tasks.title);
+    }
+  };
+
   return (
-    <View style={styles.card}>
+    <TouchableOpacity
+      style={styles.card}
+      onPress={handlePress}
+      activeOpacity={0.7}
+    >
       <View style={styles.content}>
         <Text style={styles.category}>{tasks.category}</Text>
         <Text style={styles.title}>{tasks.title}</Text>
@@ -40,7 +60,7 @@ const TaskCard = ({ tasks }: TaskCardProps) => {
       >
         <Ionicons name={tasks.icon.name as any} size={18} color={"#fff"} />
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
